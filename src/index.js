@@ -3,7 +3,7 @@ import unpdateNotifier from 'update-notifier';
 import isInstalledGlobally from 'is-installed-globally';
 import { exec } from '@tunnckocore/execa';
 
-export default async function updater(options) {
+export default function updater(options) {
   const opts = Object.assign({}, options);
 
   if (!opts.pkg.name || !opts.pkg.version) {
