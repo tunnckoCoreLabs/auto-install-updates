@@ -1,7 +1,8 @@
-// import proc from 'process';
+import fs from 'fs';
+import path from 'path';
 import unpdateNotifier from 'update-notifier';
-import isInstalledGlobally from 'is-installed-globally';
 import { exec } from '@tunnckocore/execa';
+import globalDirs from 'global-dirs';
 
 export default function updater(options) {
   const opts = Object.assign({}, options);
@@ -14,7 +15,7 @@ export default function updater(options) {
     if (err) {
       throw err;
     }
-    if (info.type !== 'latest') {
+    if (isInstalledGlobally(opts.pkg) && info.type !== 'latest') {
       autoupdate(opts.pkg, opts.manager);
     }
   };
@@ -22,25 +23,36 @@ export default function updater(options) {
   return unpdateNotifier(opts);
 }
 
+function isInstalledGlobally({ name }) {
+  /* eslint-disable no-restricted-syntax */
+
+  let exists = false;
+  for (const [, dirs] of Object.entries(globalDirs)) {
+    for (const [, globalPath] of Object.entries(dirs)) {
+      const fp = path.join(globalPath, name);
+      if (fs.existsSync(fp)) {
+        exists = true;
+        break;
+      }
+    }
+  }
+  return exists;
+}
+
 async function autoupdate(pkg, manager) {
   const isNpm = manager === 'npm';
 
   if (isNpm || manager === 'pnpm') {
-    await exec(
-      `${isNpm ? 'npm' : 'pnpm'} install ${
-        isInstalledGlobally ? '--global' : ''
-      } ${pkg.name}`,
-    );
+    await exec(`${isNpm ? 'npm' : 'pnpm'} install --global ${pkg.name}`);
   }
 
   if (manager === 'yarn') {
-    const g = isInstalledGlobally ? 'global' : '';
     await exec([
       // ensure it is cleanest one
-      `yarn ${g} remove ${pkg.name}`,
+      `yarn global remove ${pkg.name}`,
 
       // install it after that ensurance
-      `yarn ${g} add ${pkg.name}`,
+      `yarn global add ${pkg.name}`,
     ]);
   }
 }
