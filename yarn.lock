@@ -123,7 +123,7 @@
     new-release "^4.0.3"
     nyc "^13.1.0"
 
-"@tunnckocore/execa@^2.0.2", "@tunnckocore/execa@^2.1.1":
+"@tunnckocore/execa@^2.0.2":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@tunnckocore/execa/-/execa-2.1.1.tgz#4123475347bb9131ef93e0cdd3511c3f23c7419f"
   integrity sha512-rL+UZdTj/ej4ymqyVtFT7YWVrlu3w4G4Uhvdu/fbkxdIcQnpXo7lrqmhz4tPu5Samf8d1J/58wW7RWIDhZ0ssQ==
@@ -132,6 +132,11 @@
     execa "^1.0.0"
     p-map-series "^1.0.0"
     split-cmd "^1.0.0"
+
+"@tunnckocore/execa@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@tunnckocore/execa/-/execa-3.0.0.tgz#b5efae1e6179235b863439871d64134310e357a2"
+  integrity sha512-O8xqUx0thraoH9EqQ3Pxv7Qy40Eo2r75G71Km2CLXd5qYPJ6S/tnkLnlkGqCcKZuXQTXfMe2PHFDA6C1eg/0oQ==
 
 "@tunnckocore/scripts@^1.0.1":
   version "1.0.1"

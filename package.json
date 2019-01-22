@@ -11,7 +11,7 @@
     "node": "^8.11.0 || >=10.13.0"
   },
   "dependencies": {
-    "@tunnckocore/execa": "^2.1.1",
+    "@tunnckocore/execa": "^3.0.0",
     "esm": "^3.0.84",
     "global-dirs": "^0.1.1",
     "update-notifier": "^2.5.0"
