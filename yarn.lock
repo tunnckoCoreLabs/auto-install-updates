@@ -145,10 +145,14 @@
     p-map-series "^1.0.0"
     split-cmd "^1.0.0"
 
-"@tunnckocore/execa@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@tunnckocore/execa/-/execa-3.0.0.tgz#b5efae1e6179235b863439871d64134310e357a2"
-  integrity sha512-O8xqUx0thraoH9EqQ3Pxv7Qy40Eo2r75G71Km2CLXd5qYPJ6S/tnkLnlkGqCcKZuXQTXfMe2PHFDA6C1eg/0oQ==
+"@tunnckocore/execa@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@tunnckocore/execa/-/execa-4.0.0.tgz#367231cb3390e617562601e350075e7a22c975d8"
+  integrity sha512-GFCTpnu6hdJpR+EKZtvSJMdGmnSCVfzIcI5QjkQ1q343ok8bsQ1tz9HWaFT/oEytuyuSIhdUkH4r+7nv068tBg==
+  dependencies:
+    execa "^1.0.0"
+    p-map-series "^2.0.0"
+    split-cmd "^1.0.0"
 
 "@tunnckocore/scripts@^1.0.1":
   version "1.0.1"
@@ -2996,6 +3000,11 @@ p-map-series@1.0.0, p-map-series@^1.0.0:
   integrity sha1-v5j+V1cFZYqeE1G++4WuTB8Hvco=
   dependencies:
     p-reduce "^1.0.0"
+
+p-map-series@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/p-map-series/-/p-map-series-2.1.0.tgz#7560d4c452d9da0c07e692fdbfe6e2c81a2a91f2"
+  integrity sha512-RpYIIK1zXSNEOdwxcfe7FdvGcs7+y5n8rifMhMNWvaxRNMPINJHF5GDeuVxWqnfrcHPSCnp7Oo5yNXHId9Av2Q==
 
 p-map@^1.2.0:
   version "1.2.0"
