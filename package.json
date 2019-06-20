@@ -17,7 +17,7 @@
     "update-notifier": "^3.0.0"
   },
   "devDependencies": {
-    "@tunnckocore/config": "^0.5.1",
+    "@tunnckocore/config": "^4.0.0",
     "@tunnckocore/scripts": "^1.0.1",
     "asia": "^0.19.7"
   },
