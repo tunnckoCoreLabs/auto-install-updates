@@ -13,7 +13,7 @@
   "dependencies": {
     "@tunnckocore/execa": "^4.0.0",
     "esm": "^3.0.84",
-    "global-dirs": "^1.0.0",
+    "global-dirs": "^2.0.0",
     "update-notifier": "^3.0.0"
   },
   "devDependencies": {
