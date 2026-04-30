@@ -1695,19 +1695,19 @@ glob@^7.0.3, glob@^7.0.5, glob@^7.1.2, glob@^7.1.3:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-global-dirs@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/global-dirs/-/global-dirs-2.0.0.tgz#fece111e32f8fad04ff73186362bb32ddeaac2e8"
-  integrity sha512-Ny6SRz+NMemW6S1GxUdnZFH2UhE1Zybf5lDQHhOHI98KkHUZsCddObyhW1Iyt6mFmcD7I0lgTLU9PcUpIhIgSw==
-  dependencies:
-    ini "^1.3.5"
-
 global-dirs@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/global-dirs/-/global-dirs-2.0.1.tgz#acdf3bb6685bcd55cb35e8a052266569e9469201"
   integrity sha512-5HqUqdhkEovj2Of/ms3IeS/EekcO54ytHRLV4PEY2rhRwrHXLQjeVEES0Lhka0xwNDtGYn58wyC4s5+MHsOO6A==
   dependencies:
     ini "^1.3.5"
+
+global-dirs@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/global-dirs/-/global-dirs-4.0.0.tgz#953f7e7e81c07f146884d0679a485bf24faa21fb"
+  integrity sha512-PJ0OjGf/kVuu9gh5IPgAyssfJne5PsU9+ICxfWiRYDUnYq8ob+Y2nSWAEUNEHRj+gowyzI+wg5/nWkvcjcyLwg==
+  dependencies:
+    ini "2.0.0"
 
 globals@^11.1.0, globals@^11.7.0:
   version "11.8.0"
@@ -1954,6 +1954,11 @@ inherits@2, inherits@^2.0.1, inherits@~2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
+
+ini@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-2.0.0.tgz#e5fd556ecdd5726be978fa1001862eacb0a94bc5"
+  integrity sha512-7PnF4oN3CvZF23ADhA5wRaYEQpJ8qygSkbtTXWBeXWXmEVRXK+1ITciHWwHhsjv1TmW0MgacIv6hEi5pX5NQdA==
 
 ini@^1.3.5, ini@~1.3.0:
   version "1.3.5"
