@@ -19,7 +19,7 @@
   "devDependencies": {
     "@tunnckocore/config": "^0.5.1",
     "@tunnckocore/scripts": "^1.0.1",
-    "asia": "^0.19.7"
+    "asia": "^3.0.0"
   },
   "files": [
     "src",
